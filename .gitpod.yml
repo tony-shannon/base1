@@ -8,10 +8,10 @@ image: nodered/node-red
 #ports:
 #  - port: 8000
 #    onOpen: open-preview
-
-tasks:
-- init: npm install && npm run build
-  command: npm start
 ports:
 - port: 1880
   onOpen: open-preview
+tasks:
+- init: npm install && npm run build
+  command: npm start
+
