@@ -2,7 +2,7 @@ image: hello-world
 
 
 # The Docker image to run your workspace in. Defaults to gitpod/workspace-full
-image: <your-workspace-image>
+# image: <your-workspace-image>
 # Command to start on workspace startup (optional)
 tasks:
   #- init: yarn install
