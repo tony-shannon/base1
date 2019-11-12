@@ -1,0 +1,8 @@
+ports:
+  - port: 8080
+    onOpen: ignore #open-preview
+tasks:
+  - before: npm install -g --unsafe-perm node-red
+ # - command: gp await-port 8080
+    init: npm start
+    command: npm start

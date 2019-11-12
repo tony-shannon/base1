@@ -1,0 +1,20 @@
+{
+  "name": "nodered_on_gitpod1",
+  "version": "1.0.0",
+  "description": "for NR on Gitpod stuff",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-red -p 8080 -u ./NRed",
+     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tony-shannon/base1.git"
+  },
+  "author": "TS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tony-shannon/base1/issues"
+  },
+  "homepage": "https://github.com/tony-shannon/base1#readme"
+}
