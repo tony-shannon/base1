@@ -4,7 +4,7 @@ ports:
   - port: 8050  #VitalsFaker
   - port: 8090 #JSONserver
 tasks:
-  - before: npm install -g --unsafe-perm node-red && npm install --prefix ./workspace/base1/VitalsFaker json-server --save-dev
+  - before: npm install -g --unsafe-perm node-red && npm install --prefix ./VitalsFaker json-server --save-dev
  # - command: gp await-port 8080
     init: npm start
     command: npm start
