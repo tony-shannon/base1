@@ -1,6 +1,7 @@
 ports:
-  - port: 8080
+  - port: 8080 #NodeRed
     onOpen: ignore #open-preview
+  - port: 8050  #VitalsFaker
 tasks:
   - before: npm install -g --unsafe-perm node-red
  # - command: gp await-port 8080

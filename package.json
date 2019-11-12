@@ -4,7 +4,7 @@
   "description": "for NR on Gitpod stuff",
   "main": "index.js",
   "scripts": {
-    "start": "node-red -p 8080 -u ./NRed",
+    "start": "node VitalsFaker/test1 & node-red -p 8080 -u ./NRed lib/flows/flowsNR.json",
      "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
