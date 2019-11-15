@@ -8,6 +8,7 @@ RUN npm install -g json-server
 USER gitpod
 # Apply user-specific settings
 # ENV ...
+RUN sudo install -g json-server
 
 # Give back control
-USER root
+#USER root
