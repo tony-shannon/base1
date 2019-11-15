@@ -4,7 +4,6 @@
   "description": "for NR on Gitpod stuff",
   "main": "index.js",
   "scripts": {
-    "start": "node VitalsFaker/test1 & node VitalsFaker/faker1 & node VitalsFaker/jsonserver & node-red -p 8080 -u ./NRed lib/flows/flowsNR.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,11 +16,10 @@
     "url": "https://github.com/tony-shannon/base1/issues"
   },
   "homepage": "https://github.com/tony-shannon/base1#readme",
-  "devDependencies": {
-    "json-server": "^0.15.1"
-  },
   "dependencies": {
     "faker": "^4.1.0",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "json-server": "^0.15.1"
+
   }
 }

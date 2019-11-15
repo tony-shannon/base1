@@ -1,10 +1,15 @@
+image: 
+  file: Dockerfile
+
 ports:
   - port: 8080 #NodeRed
     onOpen: ignore #open-preview
   - port: 8050  #VitalsFaker
   - port: 8090 #JSONserver
 tasks:
-  - before: npm install -g --unsafe-perm node-red && npm install --prefix ./VitalsFaker json-server faker fs
+ # - before: npm install -g --unsafe-perm node-red && npm install --prefix ./VitalsFaker json-server faker fs
  # - command: gp await-port 8080
-    init: npm start
-    command: npm start
+ # - before: npm install -g --unsafe-perm node-red
+  - init: npm install 
+
+  - command: node VitalsFaker/test1 & node VitalsFaker/faker1 & node VitalsFaker/jsonserver & node-red -p 8080 -u ./NRed lib/flows/flowsNR.json
