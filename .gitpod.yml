@@ -10,6 +10,13 @@ tasks:
  # - before: npm install -g --unsafe-perm node-red && npm install --prefix ./VitalsFaker json-server faker fs
  # - command: gp await-port 8080
  # - before: npm install -g --unsafe-perm node-red
-  - init: npm install 
+ - name: StartUp 
+   init: npm install 
+   command: node VitalsFaker/faker1
 
-  - command: node VitalsFaker/test1 & node VitalsFaker/faker1 & node VitalsFaker/jsonserver & node-red -p 8080 -u ./NRed lib/flows/flowsNR.json
+ - name: JSONserver setup
+   init: npm install --prefix ./VitalsFaker json-server #-g json-server 
+   command: node VitalsFaker/jsonserver
+
+ - name: Good to Go   
+   command: node VitalsFaker/test1  & node-red -p 8080 -u ./NRed lib/flows/flowsNR.json

@@ -18,7 +18,6 @@
   "homepage": "https://github.com/tony-shannon/base1#readme",
   "dependencies": {
     "faker": "^4.1.0",
-    "fs": "0.0.1-security",
-    "json-server": "0.15.1"
+    "fs": "0.0.1-security"
   }
 }
