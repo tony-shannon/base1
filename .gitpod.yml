@@ -16,7 +16,7 @@ tasks:
 
  - name: JSONserver setup
    #init: npm install --prefix ./VitalsFaker json-server #-g json-server 
-   command: node VitalsFaker/jsonserver
+   command: json-server VitalsFaker/data3.json -p 8090
 
  - name: NodeRed startup
    command: node-red -p 8080 -u ./NRed lib/flows/flowsNR.json
