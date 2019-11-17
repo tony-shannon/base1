@@ -9,7 +9,7 @@ USER gitpod
 # Apply user-specific settings
 # ENV ...
 RUN npm install -g --unsafe-perm node-red
-#RUN npm install -g json-server
+RUN npm install -g json-server
 
 # Give back control
 USER root
