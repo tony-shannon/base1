@@ -3,9 +3,11 @@ image:
 
 ports:
   - port: 8080 #NodeRed
-    onOpen: ignore #open-preview
+    onOpen: open-preview
   - port: 8050  #VitalsFaker
+    onOpen: ignore
   - port: 8090 #JSONserver
+    onOpen: ignore
 tasks:
  # - before: npm install -g --unsafe-perm node-red && npm install --prefix ./VitalsFaker json-server faker fs
  # - command: gp await-port 8080
