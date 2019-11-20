@@ -21,4 +21,5 @@ tasks:
  ##  command: json-server VitalsFaker/data3.json -p 8090
 
  - name: NodeRed startup
+   init: cd ./NRed  && npm install
    command: node-red -p 8080 -u ./NRed lib/flows/flowsNR.json
