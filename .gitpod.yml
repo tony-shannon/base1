@@ -4,21 +4,21 @@ image:
 ports:
   - port: 8080 #NodeRed
     onOpen: open-preview
-  - port: 8050  #VitalsFaker
-    onOpen: ignore
-  - port: 8090 #JSONserver
-    onOpen: ignore
+ ## - port: 8050  #VitalsFaker
+ ##   onOpen: ignore
+ ## - port: 8090 #JSONserver
+ ##   onOpen: ignore
 tasks:
  # - before: npm install -g --unsafe-perm node-red && npm install --prefix ./VitalsFaker json-server faker fs
  # - command: gp await-port 8080
  # - before: npm install -g --unsafe-perm node-red
- - name: StartUp test & Faker
-   init: npm install 
-   command: node VitalsFaker/test1  & node VitalsFaker/faker1
+ ##- name: StartUp test & Faker
+ ##  init: npm install 
+ ##  command: node VitalsFaker/test1  & node VitalsFaker/faker1
 
- - name: JSONserver setup
+ ##- name: JSONserver setup
    #init: npm install --prefix ./VitalsFaker json-server #-g json-server 
-   command: json-server VitalsFaker/data3.json -p 8090
+ ##  command: json-server VitalsFaker/data3.json -p 8090
 
  - name: NodeRed startup
    command: node-red -p 8080 -u ./NRed lib/flows/flowsNR.json
