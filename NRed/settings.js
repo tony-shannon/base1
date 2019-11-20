@@ -215,6 +215,7 @@ module.exports = {
     //    global.get("os")
     functionGlobalContext: {
         // os:require('os'),
+        TfModule:require('qewd-transform-json')
         // jfive:require("johnny-five"),
         // j5board:require("johnny-five").Board({repl:false})
     },
